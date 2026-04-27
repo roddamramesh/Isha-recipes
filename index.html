@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Taste of Well-Being – Isha Yoga Centre Recipes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ── TOP BAR ─────────────────────────────────────────────────── -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <span class="topbar-leaf">🌿</span>
+      <div>
+        <div class="topbar-title">A Taste of Well-Being</div>
+        <div class="topbar-sub">Isha Yoga Centre · 109 Recipes</div>
+      </div>
+    </div>
+    <nav class="topbar-nav">
+      <a href="#recipes">Recipes</a>
+      <a href="#wisdom">Wisdom</a>
+      <a href="#glossary">Ingredients</a>
+      <a href="#techniques">Techniques</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── RECIPES (LANDING SECTION) ──────────────────────────────── -->
+<section class="recipes-top" id="recipes">
+  <div class="container">
+    <div class="recipes-header">
+      <div>
+        <h1 class="recipes-heading">All Recipes</h1>
+        <p class="recipes-subheading">109 wholesome recipes from the Isha Yoga Centre kitchen · Serves 4 · All vegetarian</p>
+      </div>
+    </div>
+
+    <!-- Search + Filters -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="🔍  Search recipes or ingredients…"/>
+    </div>
+    <div class="filter-row" id="filterRow"></div>
+  </div>
+</section>
+
+<!-- ── RECIPE GRID ─────────────────────────────────────────────── -->
+<main class="container">
+  <div class="recipe-grid" id="recipeGrid"></div>
+  <p class="no-results hidden" id="noResults">No recipes found. Try a different search.</p>
+</main>
+
+<!-- ── MODAL ──────────────────────────────────────────────────── -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ── SADHGURU WISDOM ─────────────────────────────────────────── -->
+<section class="wisdom-section" id="wisdom">
+  <div class="container">
+    <h2 class="section-title light">Sadhguru's Food Wisdom</h2>
+    <div class="wisdom-grid">
+      <div class="wisdom-card">
+        <h3>Pranic Classification</h3>
+        <p><strong>Positive Pranic:</strong> All vegetables, fruits, nuts, sprouts, dry fruits — add life energy to your system.</p>
+        <p><strong>Zero Pranic:</strong> Potatoes and tomatoes — neither add nor take away prana; increase sleep quota. Avoid if you have joint problems.</p>
+        <p><strong>Negative Pranic:</strong> Garlic, onion, asafoetida, chilli, brinjal, coffee, alcohol — take away prana and cause emotional instability.</p>
+      </div>
+      <div class="wisdom-card">
+        <h3>Ekadashi Fasting</h3>
+        <p>On the 11th day after full moon and new moon, the body naturally needs less food. Fasting on Ekadashi lowers cancerous cells — they need 20× more food than normal cells and die first during a fast.</p>
+        <p>Break the fast with papaya, fruit salads, and green gram sprouts.</p>
+      </div>
+      <div class="wisdom-card">
+        <h3>Water Wisdom</h3>
+        <p>Store water in a copper vessel overnight — it acquires qualities beneficial for the liver and overall health. Drink tepid water on an empty stomach in the morning as a great cleanser.</p>
+        <p>Do not drink water immediately after eating — it dilutes digestive juices.</p>
+      </div>
+      <div class="wisdom-card">
+        <h3>Honey &amp; Jaggery</h3>
+        <p><strong>Honey:</strong> Never heat honey — it turns toxic. Add only after removing from heat.</p>
+        <p><strong>Jaggery:</strong> The medicinal sugar — cleanses toxins, stimulates digestion, helps recovery from heat and exertion. Always preferred over white sugar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PHILOSOPHY STRIP ────────────────────────────────────────── -->
+<section class="philosophy">
+  <div class="container">
+    <div class="phil-grid">
+      <div class="phil-card"><span class="phil-icon">🌿</span><h3>Positive Pranic</h3><p>All vegetables, nuts, sprouts, fruits and dry fruits add life energy (prana) to your system.</p></div>
+      <div class="phil-card"><span class="phil-icon">🌾</span><h3>Live Food First</h3><p>Eat at least 50% raw — fruits, vegetables, nuts and sprouted grams for maximum vitality.</p></div>
+      <div class="phil-card"><span class="phil-icon">🙏</span><h3>Eat with Gratitude</h3><p>Eating with reverence transforms food into nourishment that works wonderfully for you.</p></div>
+      <div class="phil-card"><span class="phil-icon">⏰</span><h3>Freshly Prepared</h3><p>Cooked food should be eaten within 1.5 hours of preparation for maximum prana.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INGREDIENT GLOSSARY ─────────────────────────────────────── -->
+<section class="glossary-section" id="glossary">
+  <div class="container">
+    <h2 class="section-title">Ingredient Glossary &amp; Benefits</h2>
+    <p class="section-sub">Key ingredients used across recipes — their origins, uses and health benefits</p>
+    <div class="glossary-grid" id="glossaryGrid"></div>
+  </div>
+</section>
+
+<!-- ── TECHNIQUES ─────────────────────────────────────────────── -->
+<section class="techniques-section" id="techniques">
+  <div class="container">
+    <h2 class="section-title light">Kitchen Techniques</h2>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <h3>🥗 Salad Dressings</h3>
+        <p><strong>Classic Lemon &amp; Olive Oil:</strong> Whisk lemon juice + salt + pepper, stream in olive oil. Best for green leaf salads, tomatoes, cucumber, capsicum.</p>
+        <p><strong>Sweet Salad Dressing:</strong> Orange juice + lemon + honey + olive oil. Perfect for fruit salads, carrots, beets, spinach.</p>
+        <p><strong>Asian Vinaigrette:</strong> Gingelly oil + sesame seeds + orange + lemon + honey + ginger + soy sauce. Great for slaw-style shredded salads.</p>
+      </div>
+      <div class="tech-card">
+        <h3>🌱 Sprouting Guide</h3>
+        <p>Soak moong dal 6–8 hours until skins split. Wrap in damp cloth, place in warm dark spot for 8 hours. Sprout tails of ¼–½ inch are ideal — too short or too long causes excess gas.</p>
+        <p>Sprouting maximizes nutrition and reduces cooking time. Most sprouts can be eaten raw; chanas should be blanched first.</p>
+      </div>
+      <div class="tech-card">
+        <h3>🥜 Soaking Groundnuts</h3>
+        <p>Shell raw groundnuts, wash 2–3 times. Cover with warm water (double depth). Add a pinch of salt to reduce enzyme inhibitors. Soak 6–8 hours until plump. Drain, rinse and serve.</p>
+        <p>Soaking maximizes phytonutrients and digestibility. Serve as a raw side dish at breakfast alongside kanji.</p>
+      </div>
+      <div class="tech-card">
+        <h3>🌶️ Tempering (Tarka)</h3>
+        <p>Heat oil until very hot (not smoking). Add mustard seeds → cumin → other whole spices → dals → curry leaves → aromatics → base vegetables → powdered spices.</p>
+        <p>This technique infuses oil with deep flavour and mellows pungency of spices.</p>
+      </div>
+      <div class="tech-card">
+        <h3>🍯 Jaggery Syrup</h3>
+        <p>Equal parts jaggery + water in heavy pan. Boil on low heat, skim impurities.</p>
+        <p><strong>Single-string</strong> = for teas, juices, kanjis. <strong>Double-string</strong> = for pancakes. <strong>Paste</strong> = for Indian sweets.</p>
+      </div>
+      <div class="tech-card">
+        <h3>🥦 Blanching Vegetables</h3>
+        <p>Cut vegetables into bite-sized pieces. Boil salted water. Add vegetables until colour intensifies (bright green). Immediately plunge into ice-cold water to stop cooking. Drain and use in salads.</p>
+        <p>Preserves nutrients, colour and texture while making dense vegetables easier to digest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><em>A Taste of Well-Being</em> — Isha Yoga Centre, Velliangiri Foothills, Tamil Nadu</p>
+    <p class="footer-note">109 recipes · All recipes serve 4 · Replace chilli with black pepper for a fully positive-pranic adaptation</p>
+  </div>
+</footer>
+
+<script src="recipes-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
